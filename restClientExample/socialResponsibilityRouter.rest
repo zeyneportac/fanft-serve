@@ -1,0 +1,42 @@
+GET {{baseUrl}}/socialResponsibility HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+###
+
+GET {{baseUrl}}/socialResponsibility/1 HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+###
+
+POST {{baseUrl}}/socialResponsibility HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "socialResponsibilityName": "Test Dokümantasyon",
+    "socialResponsibilityStatus": "Test 12 3"
+}
+
+###
+
+PUT {{baseUrl}}/socialResponsibility HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "Id": 1,
+    "socialResponsibilityName": "Test Dokümantasyon",
+    "socialResponsibilityStatus": "Test 12 3"
+}
+
+###
+
+DELETE {{baseUrl}}/socialResponsibility HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "Id": 1
+}

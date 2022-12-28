@@ -1,0 +1,42 @@
+GET {{baseUrl}}/choreographie HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+###
+
+GET {{baseUrl}}/choreographie/1 HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+###
+
+POST {{baseUrl}}/choreographie HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "ChoreographieName": "Test Dokümantasyon",
+    "ChoreographieStatus": "Test 12 3"
+}
+
+###
+
+PUT {{baseUrl}}/choreographie HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "Id": 1,
+    "ChoreographieName": "Test Dokümantasyon",
+    "ChoreographieStatus": "Test 12 3"
+}
+
+###
+
+DELETE {{baseUrl}}/choreographie HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "Id": 1
+}

@@ -1,0 +1,42 @@
+GET {{baseUrl}}/displacement HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+###
+
+GET {{baseUrl}}/displacement/1 HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+###
+
+POST {{baseUrl}}/displacement HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "DisplacementName": "Test Dokümantasyon",
+    "DisplacementStatus": "Test 12 3"
+}
+
+###
+
+PUT {{baseUrl}}/displacement HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "Id": 1,
+    "DisplacementName": "Test Dokümantasyon",
+    "DisplacementStatus": "Test 12 3"
+}
+
+###
+
+DELETE {{baseUrl}}/displacement HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "Id": 1
+}

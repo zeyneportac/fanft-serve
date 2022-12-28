@@ -1,0 +1,43 @@
+GET {{baseUrl}}/user HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+###
+
+GET {{baseUrl}}/user/1 HTTP/1.1
+token: {{token}}
+
+###
+
+DELETE {{baseUrl}}/user HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "Id": "3"
+}
+
+###
+
+POST {{baseUrl}}/user
+Content-Type: application/json
+token: {{token}}
+
+{
+    "UserName": "zey",
+    "UserPassword": "password",
+    "UserEmail": "zey@project.com",
+}
+
+###
+
+PUT {{baseUrl}}/user
+Content-Type: application/json
+token: {{token}}
+
+{
+    "Id": 1,
+    "UserName": "zey",
+    "UserEmail": "zey@project.com",
+}
+

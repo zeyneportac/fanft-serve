@@ -1,0 +1,19 @@
+POST {{baseUrl}}/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "UserEmail": "zey@project.com",
+    "UserPassword": "password"
+}
+
+###
+
+PUT {{baseUrl}}/change-password HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+
+{
+    "UserPassword": "password",
+    "UserNewPassword": "password"
+}

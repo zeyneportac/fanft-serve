@@ -1,0 +1,42 @@
+GET {{baseUrl}}/banner HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+###
+
+GET {{baseUrl}}/banner/1 HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+###
+
+POST {{baseUrl}}/banner HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "BannerName": "Test Dokümantasyon",
+    "BannerStatus": "Test 12 3"
+}
+
+###
+
+PUT {{baseUrl}}/banner HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "Id": 1,
+    "BannerName": "Test Dokümantasyon",
+    "BannerStatus": "Test 12 3"
+}
+
+###
+
+DELETE {{baseUrl}}/banner HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "Id": 1
+}
